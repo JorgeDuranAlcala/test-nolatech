@@ -1,6 +1,7 @@
 import { Box, Button, Typography } from '@mui/material'
 import { Grid, TextField } from '@mui/material'
 import { Carousel } from 'react-responsive-carousel';
+import { Instagram, Facebook, Twitter, YouTube, WhatsApp } from '@mui/icons-material'
 
 const imgUrl = new URL('/Prb Header.png', import.meta.url).href
 const personImg = new URL('/Pic5.png', import.meta.url).href
@@ -21,11 +22,29 @@ const pic1 = new URL('/Pic1.png', import.meta.url).href
 export function MainPage() {
   return (
 
-    <Box display={"flex"} flexDirection={"column"} width={'100%'} height={'100vh'}>
+    <Box display={"flex"} flexDirection={"column"} width={'100%'} height={'100vh'} sx={{ position: 'relative' }}>
+
       <Box display={"flex"} gap={2} justifyContent={'center'} alignItems={"center"} width={'100%'} sx={{ backgroundColor: "green", color: "#fff" }}>
           <Box sx={{ backgroundColor: "red", paddingX: 4, paddingY: 2 }} >LIVE</Box>
           <Box>Lorem Ipsum dolor sit armet</Box>
           <Box sx={{ backgroundColor: "darkgreen", paddingX: 4, paddingY: 2 }}>JOIN NOW</Box>
+      </Box>
+      <Box sx={{ position: "fixed", backgroundColor: "lightgray", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", right: 40, bottom: "10%", zIndex: 9999 }}>
+        <div style={{ padding: 10, border: "1px solid #000"}}>
+          <Instagram sx={{ color: "#fff", fontSize: 40 }} />
+        </div>
+        <div style={{ padding: 10, border: "1px solid #000"}}>
+          <Facebook sx={{ color: "#fff", fontSize: 40 }} />
+        </div>
+        <div style={{ padding: 10, border: "1px solid #000"}}>
+          <Twitter sx={{ color: "#fff", fontSize: 40 }}/>
+        </div>
+        <div style={{ padding: 10, border: "1px solid #000"}}>
+          <YouTube sx={{ color: "#fff", fontSize: 40 }}/>
+        </div>
+        <div style={{ padding: 10, border: "1px solid #000"}}>
+          <WhatsApp sx={{ color: "#fff", fontSize: 40 }}/>
+        </div>
       </Box>
       <main className="main">
           <Box display={"flex"} className="background-image" width={'100%'} height={'100vh'} style={{ backgroundImage: `url(${imgUrl})`, backgroundSize: 'cover' }}>
