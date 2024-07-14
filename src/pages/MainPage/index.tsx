@@ -52,7 +52,29 @@ export function MainPage() {
                 </Box>
             </Box>
           </Box>
-          <Box display={"flex"} padding={10} style={{ backgroundColor: 'green' }}></Box>
+          <Box display={"flex"} padding={10} style={{ backgroundColor: 'green' }}>
+            <Box flex={0.5} paddingLeft={4} paddingRight={4} sx={{ justifyContent: "center", alignItems: "center"}}>
+                <h1 style={{ marginBottom: 40, color: "#fff"}}>Lorem Ipsum dolor sit amet</h1>
+            </Box>
+            <Box display={"flex"} gap={2} flex={0.5}>
+              <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} sx={{ paddingX: 6, borderRight: "2px solid #fff" }}>
+                <h3 style={{ fontSize: 60, color: "#fff" }}>170</h3>
+                <p style={{ color: "#fff" }}>Days</p>
+              </Box>
+              <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} sx={{ paddingX: 6, borderRight: "2px solid #fff" }}>
+                <h3 style={{ fontSize: 60, color: "#fff" }}>13</h3>
+                <p style={{ color: "#fff" }}>Hours</p>
+              </Box>
+              <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} sx={{ paddingX: 6, borderRight: "2px solid #fff" }}>
+                <h3 style={{ fontSize: 60, color: "#fff" }}>39</h3>
+                <p style={{ color: "#fff" }}>Minutes</p>
+              </Box>
+              <Box display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} sx={{ paddingX: 6, borderRight: "2px solid #fff" }}>
+                <h3 style={{ fontSize: 60, color: "#fff" }}>29</h3>
+                <p style={{ color: "#fff" }}>Seconds</p>
+              </Box>
+            </Box>
+          </Box>
           <Box display={"flex"} padding={10} width={'100%'} height={'100vh'}>
             <Box flex={0.5} paddingLeft={4} paddingRight={4} sx={{ justifyContent: "center", alignItems: "center"}}>
                 <h1 style={{ marginBottom: 40}}>Lorem Ipsum <br/> dolor sit amet</h1>
